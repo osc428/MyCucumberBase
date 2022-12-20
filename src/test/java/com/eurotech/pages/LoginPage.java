@@ -51,6 +51,7 @@ public class LoginPage extends BasePage{
         passwordInput.sendKeys(password);
         understandBtn.click();
         loginBtn.click();
+        BrowserUtils.waitFor(2);
     }
 
     public void loginAsTeacher(){

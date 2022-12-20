@@ -11,7 +11,7 @@ public class Hooks {
 
     @Before
     public void setup() {
-        System.out.println("Before Method");
+        //System.out.println("Before Method");
     }
 
    @After
@@ -25,11 +25,11 @@ public class Hooks {
 
     @Before("@db")
     public void setupDB() {
-        System.out.println("Before Method for Database");
+        //System.out.println("Before Method for Database");
     }
 
     @After("@db")
     public void closeDB() throws Exception {
-        System.out.println("After Method for Database");
+        //System.out.println("After Method for Database");
     }
 }
