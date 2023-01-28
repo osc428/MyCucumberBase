@@ -1,6 +1,6 @@
-package com.eurotech.step_definitions;
+package com.project.step_definitions;
 
-import com.eurotech.utilities.Driver;
+import com.project.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -11,7 +11,7 @@ public class Hooks {
 
     @Before
     public void setup() {
-        //System.out.println("Before Method");
+
     }
 
    @After
@@ -23,13 +23,4 @@ public class Hooks {
        Driver.closeDriver();
     }
 
-    @Before("@db")
-    public void setupDB() {
-        //System.out.println("Before Method for Database");
-    }
-
-    @After("@db")
-    public void closeDB() throws Exception {
-        //System.out.println("After Method for Database");
-    }
 }

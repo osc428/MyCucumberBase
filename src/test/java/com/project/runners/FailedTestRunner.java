@@ -1,4 +1,4 @@
-package com.eurotech.runners;
+package com.project.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/failed-html-report.html"},
         features = "@target/rerun.txt",
-        glue = "com/eurotech/step_definitions"
+        glue = "com/project/step_definitions"
 )
 
 public class FailedTestRunner {
